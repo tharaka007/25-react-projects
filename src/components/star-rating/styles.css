@@ -1,0 +1,8 @@
+.star-rating .active {
+	fill: #fff700;
+}
+
+.star-rating svg {
+	width: 35px;
+	height: 35px;
+}	

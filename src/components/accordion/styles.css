@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: -0.04em;
+}
+
+.accordion {
+	width: 550px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.accordion .item .grid-parent {
+	display: grid;
+	width: 100%;
+	overflow: hidden;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.3s ease-in-out;
+	
+}
+
+.accordion .item .grid-parent p {
+	min-height: 0;
+}
+
+.accordion .item.open .grid-parent {
+	grid-template-rows: 1fr;
+}
+
+.question {
+	display: flex;
+	min-height: 40px;
+	line-height: 40px;
+	width: 100%;
+	justify-content: space-between;
+}
